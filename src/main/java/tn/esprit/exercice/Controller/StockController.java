@@ -2,6 +2,7 @@ package tn.esprit.exercice.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import tn.esprit.exercice.entities.Produit;
 import tn.esprit.exercice.entities.Stock;
 import tn.esprit.exercice.services.IServiceStock;
 
@@ -9,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/stock")
-public class StockController{
+public class StockController extends GenericController<Stock,Long>{
     @Autowired
     IServiceStock iServiceStock;
 

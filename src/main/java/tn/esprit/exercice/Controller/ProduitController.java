@@ -9,7 +9,7 @@ import tn.esprit.exercice.entities.Produit;
 import tn.esprit.exercice.services.IServiceProduit;
 
 @RestController
-@RequestMapping("produit")
+@RequestMapping("/produit")
 public class ProduitController extends GenericController<Produit,Long>{
     @Autowired
     IServiceProduit iServiceProduit;
