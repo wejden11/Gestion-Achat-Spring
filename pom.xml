@@ -15,6 +15,7 @@
     <description>exercice</description>
     <properties>
         <java.version>11</java.version>
+        <sonar.exclusions>**/*.java</sonar.exclusions>
     </properties>
     <dependencies>
         <dependency>
